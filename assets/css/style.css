@@ -173,7 +173,8 @@ h6, .h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
-  direction: rtl; }
+  direction: rtl;
+ }
 
 abbr[title],
 abbr[data-original-title] {
@@ -3344,15 +3345,15 @@ progress {
 .table {
   --bs-table-bg: transparent;
   --bs-table-accent-bg: transparent;
-  --bs-table-striped-color: #748494;
+  --bs-table-striped-color: #4e5861;
   --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
-  --bs-table-active-color: #748494;
+  --bs-table-active-color: #4e5861;
   --bs-table-active-bg: rgba(0, 0, 0, 0.1);
-  --bs-table-hover-color: #748494;
+  --bs-table-hover-color: #4e5861;
   --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
   width: 100%;
   margin-bottom: 1rem;
-  color: #748494;
+  color: #4e5861;
   vertical-align: top;
   border-color: #dee2e6; }
   .table > :not(caption) > * > * {
@@ -3461,7 +3462,17 @@ progress {
   --bs-table-hover-color: #000;
   color: #000;
   border-color: #e3b6b3; }
+ 
 
+ 
+  /* فقط متن‌های انگلیسی */
+.english-font :lang(en) {
+      font-family: 'classic serif', sans-serif !important;
+  }
+
+  
+
+  
 .table-light {
   --bs-table-bg: #F8F9FA;
   --bs-table-striped-bg: #ecedee;
@@ -3593,7 +3604,7 @@ progress {
   padding: 0.375rem 0;
   margin-bottom: 0;
   line-height: 1.5;
-  color: #748494;
+  color: #4e5861;
   background-color: transparent;
   border: solid transparent;
   border-width: 1px 0; }
@@ -24905,7 +24916,7 @@ body {
   -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   letter-spacing: 0;
-  color: #748494; }
+  color:#4e5861; }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: "Muli";
@@ -25210,8 +25221,8 @@ svg:not(:root) {
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.03);
   display: block;
   padding: 0;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   text-align: center;
   font-size: 25px;
@@ -25454,16 +25465,16 @@ svg:not(:root) {
       padding-bottom: 160px; } }
 
 .section-padding-t90-b100 {
-  padding-top: 90px;
-  padding-bottom: 100px; }
+  padding-top: 40px;
+  padding-bottom: 10px; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .section-padding-t90-b100 {
-      padding-top: 75px;
-      padding-bottom: 80px; } }
+      padding-top: 35px;
+      padding-bottom: 50px; } }
   @media only screen and (max-width: 767px) {
     .section-padding-t90-b100 {
-      padding-top: 55px;
-      padding-bottom: 60px; } }
+      padding-top: 25px;
+      padding-bottom: 30px; } }
 
 .section-padding-t90 {
   padding-top: 90px; }
@@ -25509,13 +25520,13 @@ svg:not(:root) {
       padding-bottom: 60px !important; } }
 
 .section-padding-bottom-150 {
-  padding-bottom: 150px; }
+  padding-bottom: 15px; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .section-padding-bottom-150 {
-      padding-bottom: 180px; } }
+      padding-bottom: 18px; } }
   @media only screen and (max-width: 767px) {
     .section-padding-bottom-150 {
-      padding-bottom: 160px; } }
+      padding-bottom: 16px; } }
 
 .section-padding-bottom-160 {
   padding-bottom: 160px; }
@@ -25548,7 +25559,7 @@ svg:not(:root) {
   padding-bottom: 190px; }
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .section-padding-bottom-190 {
-      padding-bottom: 200px; } }
+      padding-bottom: 0px; } }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .section-padding-bottom-190 {
       padding-bottom: 80px; } }
@@ -25557,7 +25568,7 @@ svg:not(:root) {
       padding-bottom: 60px; } }
 
 .section-padding-bottom-200 {
-  padding-bottom: 200px; }
+  padding-bottom: 0px; }
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .section-padding-bottom-200 {
       padding-bottom: 150px; } }
@@ -25567,6 +25578,7 @@ svg:not(:root) {
   @media only screen and (max-width: 767px) {
     .section-padding-bottom-200 {
       padding-bottom: 160px; } }
+      
 
 /*----------------------------------------*/
 /*  04. Element CSS
@@ -26081,7 +26093,7 @@ textarea {
       transform-origin: left;
       background-color: #1292ee; }
   .link:hover {
-    color: #8C89A2; }
+    color: #666379; }
     .link:hover mark::before, .link:hover .mark::before {
       -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
       transition: -webkit-transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -26853,7 +26865,7 @@ textarea {
     max-width: 820px;
     margin: 0 auto;
     margin-top: 25px;
-    color: #8C89A2; }
+    color: #666379; }
     .section-title .sub-title.fz-18 {
       font-size: 18px; }
   .section-title.color-light .title {
